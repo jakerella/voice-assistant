@@ -1,0 +1,45 @@
+[DEBUG:2024-03-31 10:39:54,636] rhasspyserver_hermes: -> AudioGetDevices(modes=[<AudioDeviceMode.INPUT: 'input'>], site_id='default', id='9e548f98-6654-447c-9fd5-a89e896eff7d', test=True)
+[DEBUG:2024-03-31 10:39:54,652] rhasspyserver_hermes: Publishing 101 bytes(s) to rhasspy/audioServer/getDevices
+[DEBUG:2024-03-31 10:39:54,721] rhasspyspeakers_cli_hermes: <- AudioGetDevices(modes=[<AudioDeviceMode.INPUT: 'input'>], site_id='default', id='9e548f98-6654-447c-9fd5-a89e896eff7d', test=True)
+[DEBUG:2024-03-31 10:39:54,719] rhasspymicrophone_cli_hermes: <- AudioGetDevices(modes=[<AudioDeviceMode.INPUT: 'input'>], site_id='default', id='9e548f98-6654-447c-9fd5-a89e896eff7d', test=True)
+[DEBUG:2024-03-31 10:39:54,739] rhasspymicrophone_cli_hermes: ['arecord', '-L']
+[DEBUG:2024-03-31 10:39:55,078] rhasspymicrophone_cli_hermes: ['arecord', '-q', '-D', 'null', '-r', '16000', '-f', 'S16_LE', '-c', '1', '-t', 'raw']
+[DEBUG:2024-03-31 10:39:55,267] rhasspymicrophone_cli_hermes: ['arecord', '-q', '-D', 'jack', '-r', '16000', '-f', 'S16_LE', '-c', '1', '-t', 'raw']
+Cannot connect to server socket err = No such file or directory
+Cannot connect to server request channel
+jack server is not running or cannot be started
+JackShmReadWritePtr::~JackShmReadWritePtr - Init not done for -1, skipping unlock
+JackShmReadWritePtr::~JackShmReadWritePtr - Init not done for -1, skipping unlock
+arecord: main:828: audio open error: No such file or directory
+[DEBUG:2024-03-31 10:39:55,524] rhasspymicrophone_cli_hermes: ['arecord', '-q', '-D', 'pulse', '-r', '16000', '-f', 'S16_LE', '-c', '1', '-t', 'raw']
+[DEBUG:2024-03-31 10:39:56,349] rhasspymicrophone_cli_hermes: ['arecord', '-q', '-D', 'default', '-r', '16000', '-f', 'S16_LE', '-c', '1', '-t', 'raw']
+[DEBUG:2024-03-31 10:39:57,027] rhasspymicrophone_cli_hermes: ['arecord', '-q', '-D', 'playback', '-r', '16000', '-f', 'S16_LE', '-c', '1', '-t', 'raw']
+ALSA lib pcm_dmix.c:1043:(snd_pcm_dmix_open) The dmix plugin supports only playback stream
+arecord: main:828: audio open error: Invalid argument
+[DEBUG:2024-03-31 10:39:57,274] rhasspymicrophone_cli_hermes: ['arecord', '-q', '-D', 'capture', '-r', '16000', '-f', 'S16_LE', '-c', '1', '-t', 'raw']
+ALSA lib pcm_dsnoop.c:638:(snd_pcm_dsnoop_open) unable to open slave
+arecord: main:828: audio open error: Device or resource busy
+[DEBUG:2024-03-31 10:39:57,514] rhasspymicrophone_cli_hermes: ['arecord', '-q', '-D', 'dmixed', '-r', '16000', '-f', 'S16_LE', '-c', '1', '-t', 'raw']
+ALSA lib pcm_dmix.c:1043:(snd_pcm_dmix_open) The dmix plugin supports only playback stream
+arecord: main:828: audio open error: Invalid argument
+[DEBUG:2024-03-31 10:39:57,754] rhasspymicrophone_cli_hermes: ['arecord', '-q', '-D', 'array', '-r', '16000', '-f', 'S16_LE', '-c', '1', '-t', 'raw']
+ALSA lib pcm_dsnoop.c:638:(snd_pcm_dsnoop_open) unable to open slave
+arecord: main:828: audio open error: Device or resource busy
+[DEBUG:2024-03-31 10:39:57,995] rhasspymicrophone_cli_hermes: ['arecord', '-q', '-D', 'usbstream:CARD=b1', '-r', '16000', '-f', 'S16_LE', '-c', '1', '-t', 'raw']
+ALSA lib pcm_usb_stream.c:508:(_snd_pcm_usb_stream_open) Unknown field hint
+arecord: main:828: audio open error: Invalid argument
+[DEBUG:2024-03-31 10:39:58,252] rhasspymicrophone_cli_hermes: ['arecord', '-q', '-D', 'sysdefault:CARD=seeed2micvoicec', '-r', '16000', '-f', 'S16_LE', '-c', '1', '-t', 'raw']
+arecord: main:828: audio open error: Device or resource busy
+[DEBUG:2024-03-31 10:39:58,500] rhasspymicrophone_cli_hermes: ['arecord', '-q', '-D', 'dmix:CARD=seeed2micvoicec,DEV=0', '-r', '16000', '-f', 'S16_LE', '-c', '1', '-t', 'raw']
+ALSA lib pcm_dmix.c:1043:(snd_pcm_dmix_open) The dmix plugin supports only playback stream
+arecord: main:828: audio open error: Invalid argument
+[DEBUG:2024-03-31 10:39:58,752] rhasspymicrophone_cli_hermes: ['arecord', '-q', '-D', 'dsnoop:CARD=seeed2micvoicec,DEV=0', '-r', '16000', '-f', 'S16_LE', '-c', '1', '-t', 'raw']
+ALSA lib pcm_dsnoop.c:638:(snd_pcm_dsnoop_open) unable to open slave
+arecord: main:828: audio open error: Device or resource busy
+[DEBUG:2024-03-31 10:39:59,082] rhasspymicrophone_cli_hermes: ['arecord', '-q', '-D', 'hw:CARD=seeed2micvoicec,DEV=0', '-r', '16000', '-f', 'S16_LE', '-c', '1', '-t', 'raw']
+arecord: main:828: audio open error: Device or resource busy
+[DEBUG:2024-03-31 10:39:59,308] rhasspymicrophone_cli_hermes: ['arecord', '-q', '-D', 'plughw:CARD=seeed2micvoicec,DEV=0', '-r', '16000', '-f', 'S16_LE', '-c', '1', '-t', 'raw']
+arecord: main:828: audio open error: Device or resource busy
+[DEBUG:2024-03-31 10:39:59,637] rhasspymicrophone_cli_hermes: -> AudioDevices(devices=[AudioDevice(mode=<AudioDeviceMode.INPUT: 'input'>, id='null', name='null', description='Discard all samples (playback) or generate zero samples (capture)*', working=True), AudioDevice(mode=<AudioDeviceMode.INPUT: 'input'>, id='jack', name='jack', description='JACK Audio Connection Kit', working=False), AudioDevice(mode=<AudioDeviceMode.INPUT: 'input'>, id='pulse', name='pulse', description='PulseAudio Sound Server', working=True), AudioDevice(mode=<AudioDeviceMode.INPUT: 'input'>, id='default', name='default', description='Playback/recording through the PulseAudio sound server', working=True), AudioDevice(mode=<AudioDeviceMode.INPUT: 'input'>, id='playback', name='playback', description='Playback/recording through the PulseAudio sound server', working=False), AudioDevice(mode=<AudioDeviceMode.INPUT: 'input'>, id='capture', name='capture', description='Playback/recording through the PulseAudio sound server', working=False), AudioDevice(mode=<AudioDeviceMode.INPUT: 'input'>, id='dmixed', name='dmixed', description='Playback/recording through the PulseAudio sound server', working=False), AudioDevice(mode=<AudioDeviceMode.INPUT: 'input'>, id='array', name='array', description='Playback/recording through the PulseAudio sound server', working=False), AudioDevice(mode=<AudioDeviceMode.INPUT: 'input'>, id='usbstream:CARD=b1', name='usbstream:CARD=b1', description='USB Stream Output', working=False), AudioDevice(mode=<AudioDeviceMode.INPUT: 'input'>, id='sysdefault:CARD=seeed2micvoicec', name='sysdefault:CARD=seeed2micvoicec', description='Default Audio Device', working=False), AudioDevice(mode=<AudioDeviceMode.INPUT: 'input'>, id='dmix:CARD=seeed2micvoicec,DEV=0', name='dmix:CARD=seeed2micvoicec,DEV=0', description='Direct sample mixing device', working=False), AudioDevice(mode=<AudioDeviceMode.INPUT: 'input'>, id='dsnoop:CARD=seeed2micvoicec,DEV=0', name='dsnoop:CARD=seeed2micvoicec,DEV=0', description='Direct sample snooping device', working=False), AudioDevice(mode=<AudioDeviceMode.INPUT: 'input'>, id='hw:CARD=seeed2micvoicec,DEV=0', name='hw:CARD=seeed2micvoicec,DEV=0', description='Direct hardware device without any conversions', working=False), AudioDevice(mode=<AudioDeviceMode.INPUT: 'input'>, id='plughw:CARD=seeed2micvoicec,DEV=0', name='plughw:CARD=seeed2micvoicec,DEV=0', description='Hardware device with all software conversions', working=False)], site_id='default', id='9e548f98-6654-447c-9fd5-a89e896eff7d')
+[DEBUG:2024-03-31 10:39:59,650] rhasspymicrophone_cli_hermes: Publishing 2177 bytes(s) to rhasspy/audioServer/devices
+[DEBUG:2024-03-31 10:40:00,074] rhasspyserver_hermes: Handling AudioDevices (topic=rhasspy/audioServer/devices, id=a5c80728-b123-4134-9163-09410094da85)

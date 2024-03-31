@@ -1,0 +1,302 @@
+[DEBUG:2024-03-31 09:57:39,695] rhasspydialogue_hermes: <- HotwordDetected(model_id='default', model_version='', model_type='personal', current_sensitivity=1.0, site_id='default', session_id=None, send_audio_captured=None, lang=None, custom_entities=None)
+[DEBUG:2024-03-31 09:57:39,708] rhasspydialogue_hermes: Playing sound /usr/lib/rhasspy/etc/wav/beep_hi.wav
+[DEBUG:2024-03-31 09:57:39,786] rhasspydialogue_hermes: -> HotwordToggleOff(site_id='default', reason=<HotwordToggleReason.PLAY_AUDIO: 'playAudio'>)
+[DEBUG:2024-03-31 09:57:39,809] rhasspydialogue_hermes: Publishing 44 bytes(s) to hermes/hotword/toggleOff
+[DEBUG:2024-03-31 09:57:39,839] rhasspydialogue_hermes: -> AsrToggleOff(site_id='default', reason=<AsrToggleReason.PLAY_AUDIO: 'playAudio'>)
+[DEBUG:2024-03-31 09:57:39,846] rhasspydialogue_hermes: Publishing 44 bytes(s) to hermes/asr/toggleOff
+[DEBUG:2024-03-31 09:57:39,948] rhasspydialogue_hermes: -> AudioPlayBytes(83948 byte(s)) to hermes/audioServer/default/playBytes/3c70d0ee-72ba-4c37-8f48-b70720e8b6fb
+[DEBUG:2024-03-31 09:57:40,042] rhasspydialogue_hermes: Waiting for playFinished (id=3c70d0ee-72ba-4c37-8f48-b70720e8b6fb, timeout=1.2012925170068027)
+[DEBUG:2024-03-31 09:57:40,058] rhasspyspeakers_cli_hermes: <- AudioPlayBytes(83948 byte(s))
+[DEBUG:2024-03-31 09:57:40,066] rhasspyasr_pocketsphinx_hermes: <- AsrToggleOff(site_id='default', reason=<AsrToggleReason.PLAY_AUDIO: 'playAudio'>)
+[DEBUG:2024-03-31 09:57:40,097] rhasspyspeakers_cli_hermes: ['aplay', '-q', '-t', 'wav']
+[DEBUG:2024-03-31 09:57:40,104] rhasspyasr_pocketsphinx_hermes: Disabled
+[DEBUG:2024-03-31 09:57:40,190] rhasspyspeakers_cli_hermes: Final volume is 0.7 (master=0.7)
+[DEBUG:2024-03-31 09:57:41,140] rhasspyspeakers_cli_hermes: -> AudioPlayFinished(id='3c70d0ee-72ba-4c37-8f48-b70720e8b6fb', session_id='3c70d0ee-72ba-4c37-8f48-b70720e8b6fb')
+[DEBUG:2024-03-31 09:57:41,155] rhasspyspeakers_cli_hermes: Publishing 99 bytes(s) to hermes/audioServer/default/playFinished
+[DEBUG:2024-03-31 09:57:41,225] rhasspytts_cli_hermes: <- AudioPlayFinished(id='3c70d0ee-72ba-4c37-8f48-b70720e8b6fb', session_id='3c70d0ee-72ba-4c37-8f48-b70720e8b6fb')
+[DEBUG:2024-03-31 09:57:41,240] rhasspydialogue_hermes: <- AudioPlayFinished(id='3c70d0ee-72ba-4c37-8f48-b70720e8b6fb', session_id='3c70d0ee-72ba-4c37-8f48-b70720e8b6fb')
+[DEBUG:2024-03-31 09:57:41,296] rhasspydialogue_hermes: -> HotwordToggleOn(site_id='default', reason=<HotwordToggleReason.PLAY_AUDIO: 'playAudio'>)
+[DEBUG:2024-03-31 09:57:41,315] rhasspydialogue_hermes: Publishing 44 bytes(s) to hermes/hotword/toggleOn
+[DEBUG:2024-03-31 09:57:41,341] rhasspydialogue_hermes: -> AsrToggleOn(site_id='default', reason=<AsrToggleReason.PLAY_AUDIO: 'playAudio'>)
+[DEBUG:2024-03-31 09:57:41,348] rhasspydialogue_hermes: Publishing 44 bytes(s) to hermes/asr/toggleOn
+[DEBUG:2024-03-31 09:57:41,372] rhasspydialogue_hermes: Starting new session (id=default-default-2777711f-f64d-4612-acaf-6a1e6396284f)
+[DEBUG:2024-03-31 09:57:41,429] rhasspyasr_pocketsphinx_hermes: <- AsrToggleOn(site_id='default', reason=<AsrToggleReason.PLAY_AUDIO: 'playAudio'>)
+[DEBUG:2024-03-31 09:57:41,459] rhasspyasr_pocketsphinx_hermes: Enabled
+[DEBUG:2024-03-31 09:57:41,446] rhasspydialogue_hermes: -> DialogueSessionStarted(session_id='default-default-2777711f-f64d-4612-acaf-6a1e6396284f', site_id='default', custom_data='default', lang=None)
+[DEBUG:2024-03-31 09:57:41,464] rhasspydialogue_hermes: Publishing 129 bytes(s) to hermes/dialogueManager/sessionStarted
+[DEBUG:2024-03-31 09:57:41,477] rhasspyasr_pocketsphinx_hermes: Receiving audio
+[DEBUG:2024-03-31 09:57:41,505] rhasspydialogue_hermes: -> HotwordToggleOff(site_id='default', reason=<HotwordToggleReason.DIALOGUE_SESSION: 'dialogueSession'>)
+[DEBUG:2024-03-31 09:57:41,507] rhasspydialogue_hermes: Publishing 50 bytes(s) to hermes/hotword/toggleOff
+[DEBUG:2024-03-31 09:57:41,582] rhasspydialogue_hermes: Listening for session default-default-2777711f-f64d-4612-acaf-6a1e6396284f
+[DEBUG:2024-03-31 09:57:41,622] rhasspydialogue_hermes: -> AsrStartListening(site_id='default', session_id='default-default-2777711f-f64d-4612-acaf-6a1e6396284f', lang=None, stop_on_silence=True, send_audio_captured=True, wakeword_id='default', intent_filter=None)
+[DEBUG:2024-03-31 09:57:41,631] rhasspydialogue_hermes: Publishing 201 bytes(s) to hermes/asr/startListening
+[DEBUG:2024-03-31 09:57:41,716] rhasspyasr_pocketsphinx_hermes: <- AsrStartListening(site_id='default', session_id='default-default-2777711f-f64d-4612-acaf-6a1e6396284f', lang=None, stop_on_silence=True, send_audio_captured=True, wakeword_id='default', intent_filter=None)
+[DEBUG:2024-03-31 09:57:41,734] rhasspyasr_pocketsphinx_hermes: Starting listening (session_id=default-default-2777711f-f64d-4612-acaf-6a1e6396284f)
+[DEBUG:2024-03-31 09:57:41,750] rhasspyasr_pocketsphinx_hermes: Receiving audio
+[DEBUG:2024-03-31 09:57:43,207] rhasspyasr_pocketsphinx_hermes: Voice command recorded for session default-default-2777711f-f64d-4612-acaf-6a1e6396284f (48960 byte(s))
+[DEBUG:2024-03-31 09:57:43,231] rhasspyasr_pocketsphinx_hermes: -> AsrRecordingFinished(site_id='default', session_id='default-default-2777711f-f64d-4612-acaf-6a1e6396284f')
+[DEBUG:2024-03-31 09:57:43,248] rhasspyasr_pocketsphinx_hermes: Publishing 90 bytes(s) to rhasspy/asr/recordingFinished
+[DEBUG:2024-03-31 09:57:43,263] rhasspyasr_pocketsphinx_hermes: Transcribing 49004 byte(s) of audio data
+INFO: pocketsphinx.c(152): Parsed model-specific feature parameters from /home/pi/.config/rhasspy/profiles/en/acoustic_model/feat.params
+Current configuration:
+[NAME]                  [DEFLT]         [VALUE]
+-agc                    none            none
+-agcthresh              2.0             2.000000e+00
+-allphone
+-allphone_ci            yes             yes
+-alpha                  0.97            9.700000e-01
+-ascale                 20.0            2.000000e+01
+-aw                     1               1
+-backtrace              no              no
+-beam                   1e-48           1.000000e-48
+-bestpath               yes             yes
+-bestpathlw             9.5             9.500000e+00
+-ceplen                 13              13
+-cmn                    live            current
+-cmninit                40,3,-1         40,3,-1
+-compallsen             no              no
+-dict                                   /home/pi/.config/rhasspy/profiles/en/dictionary.txt
+-dictcase               no              no
+-dither                 no              no
+-doublebw               no              no
+-ds                     1               1
+-fdict
+-feat                   1s_c_d_dd       1s_c_d_dd
+-featparams
+-fillprob               1e-8            1.000000e-08
+-frate                  100             100
+-fsg
+-fsgusealtpron          yes             yes
+-fsgusefiller           yes             yes
+-fwdflat                yes             yes
+-fwdflatbeam            1e-64           1.000000e-64
+-fwdflatefwid           4               4
+-fwdflatlw              8.5             8.500000e+00
+-fwdflatsfwin           25              25
+-fwdflatwbeam           7e-29           7.000000e-29
+-fwdtree                yes             yes
+-hmm                                    /home/pi/.config/rhasspy/profiles/en/acoustic_model
+-input_endian           little          little
+-jsgf
+-keyphrase
+-kws
+-kws_delay              10              10
+-kws_plp                1e-1            1.000000e-01
+-kws_threshold          1e-30           1.000000e-30
+-latsize                5000            5000
+-lda
+-ldadim                 0               0
+-lifter                 0               22
+-lm                                     /home/pi/.config/rhasspy/profiles/en/language_model.txt
+-lmctl
+-lmname
+-logbase                1.0001          1.000100e+00
+-logfn
+-logspec                no              no
+-lowerf                 133.33334       1.300000e+02
+-lpbeam                 1e-40           1.000000e-40
+-lponlybeam             7e-29           7.000000e-29
+-lw                     6.5             6.500000e+00
+-maxhmmpf               30000           30000
+-maxwpf                 -1              -1
+-mdef
+-mean
+-mfclogdir
+-min_endfr              0               0
+-mixw
+-mixwfloor              0.0000001       1.000000e-07
+-mllr
+-mmap                   yes             yes
+-ncep                   13              13
+-nfft                   512             512
+-nfilt                  40              25
+-nwpen                  1.0             1.000000e+00
+-pbeam                  1e-48           1.000000e-48
+-pip                    1.0             1.000000e+00
+-pl_beam                1e-10           1.000000e-10
+-pl_pbeam               1e-10           1.000000e-10
+-pl_pip                 1.0             1.000000e+00
+-pl_weight              3.0             3.000000e+00
+-pl_window              5               5
+-rawlogdir
+-remove_dc              no              no
+-remove_noise           yes             yes
+-remove_silence         yes             yes
+-round_filters          yes             yes
+-samprate               16000           1.600000e+04
+-seed                   -1              -1
+-sendump
+-senlogdir
+-senmgau
+-silprob                0.005           5.000000e-03
+-smoothspec             no              no
+-svspec
+-tmat
+-tmatfloor              0.0001          1.000000e-04
+-topn                   4               4
+-topn_beam              0               0
+-toprule
+-transform              legacy          dct
+-unit_area              yes             yes
+-upperf                 6855.4976       6.800000e+03
+-uw                     1.0             1.000000e+00
+-vad_postspeech         50              50
+-vad_prespeech          20              20
+-vad_startspeech        10              10
+-vad_threshold          3.0             3.000000e+00
+-var
+-varfloor               0.0001          1.000000e-04
+-varnorm                no              no
+-verbose                no              no
+-warp_params
+-warp_type              inverse_linear  inverse_linear
+-wbeam                  7e-29           7.000000e-29
+-wip                    0.65            6.500000e-01
+-wlen                   0.025625        2.562500e-02
+
+INFO: feat.c(715): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='batch', VARNORM='no', AGC='none'
+INFO: acmod.c(152): Reading linear feature transformation from /home/pi/.config/rhasspy/profiles/en/acoustic_model/feature_transform
+INFO: mdef.c(518): Reading model definition: /home/pi/.config/rhasspy/profiles/en/acoustic_model/mdef
+INFO: bin_mdef.c(181): Allocating 142124 * 8 bytes (1110 KiB) for CD tree
+INFO: tmat.c(149): Reading HMM transition probability matrices: /home/pi/.config/rhasspy/profiles/en/acoustic_model/transition_matrices
+INFO: acmod.c(113): Attempting to use PTM computation module
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: /home/pi/.config/rhasspy/profiles/en/acoustic_model/means
+INFO: ms_gauden.c(242): 5138 codebook, 1 feature, size:
+INFO: ms_gauden.c(244):  32x36
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: /home/pi/.config/rhasspy/profiles/en/acoustic_model/variances
+INFO: ms_gauden.c(242): 5138 codebook, 1 feature, size:
+INFO: ms_gauden.c(244):  32x36
+INFO: ms_gauden.c(304): 813 variance values floored
+INFO: ptm_mgau.c(803): Number of codebooks exceeds 256: 5138
+INFO: acmod.c(115): Attempting to use semi-continuous computation module
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: /home/pi/.config/rhasspy/profiles/en/acoustic_model/means
+INFO: ms_gauden.c(242): 5138 codebook, 1 feature, size:
+INFO: ms_gauden.c(244):  32x36
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: /home/pi/.config/rhasspy/profiles/en/acoustic_model/variances
+INFO: ms_gauden.c(242): 5138 codebook, 1 feature, size:
+INFO: ms_gauden.c(244):  32x36
+[ERROR:2024-03-31 09:58:11,713] rhasspydialogue_hermes: Session timed out for site default: default-default-2777711f-f64d-4612-acaf-6a1e6396284f
+[DEBUG:2024-03-31 09:58:11,800] rhasspydialogue_hermes: -> AsrStopListening(site_id='default', session_id='default-default-2777711f-f64d-4612-acaf-6a1e6396284f')
+[DEBUG:2024-03-31 09:58:11,840] rhasspydialogue_hermes: Publishing 90 bytes(s) to hermes/asr/stopListening
+[DEBUG:2024-03-31 09:58:11,896] rhasspydialogue_hermes: -> DialogueSessionEnded(termination=DialogueSessionTermination(reason=<DialogueSessionTerminationReason.TIMEOUT: 'timeout'>), session_id='default-default-2777711f-f64d-4612-acaf-6a1e6396284f', site_id='default', custom_data='default')
+[DEBUG:2024-03-31 09:58:11,919] rhasspydialogue_hermes: Publishing 153 bytes(s) to hermes/dialogueManager/sessionEnded
+[DEBUG:2024-03-31 09:58:11,967] rhasspydialogue_hermes: -> HotwordToggleOn(site_id='default', reason=<HotwordToggleReason.DIALOGUE_SESSION: 'dialogueSession'>)
+[DEBUG:2024-03-31 09:58:11,990] rhasspydialogue_hermes: Publishing 50 bytes(s) to hermes/hotword/toggleOn
+INFO: ms_gauden.c(304): 813 variance values floored
+INFO: acmod.c(117): Falling back to general multi-stream GMM computation
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: /home/pi/.config/rhasspy/profiles/en/acoustic_model/means
+INFO: ms_gauden.c(242): 5138 codebook, 1 feature, size:
+INFO: ms_gauden.c(244):  32x36
+INFO: ms_gauden.c(127): Reading mixture gaussian parameter: /home/pi/.config/rhasspy/profiles/en/acoustic_model/variances
+INFO: ms_gauden.c(242): 5138 codebook, 1 feature, size:
+INFO: ms_gauden.c(244):  32x36
+INFO: ms_gauden.c(304): 813 variance values floored
+INFO: ms_senone.c(149): Reading senone mixture weights: /home/pi/.config/rhasspy/profiles/en/acoustic_model/mixture_weights
+INFO: ms_senone.c(200): Truncating senone logs3(pdf) values by 10 bits
+INFO: ms_senone.c(207): Not transposing mixture weights in memory
+INFO: ms_senone.c(268): Read mixture weights for 5138 senones: 1 features x 32 codewords
+INFO: ms_senone.c(320): Mapping senones to individual codebooks
+INFO: ms_mgau.c(144): The value of topn: 4
+INFO: phone_loop_search.c(114): State beam -225 Phone exit beam -225 Insertion penalty 0
+INFO: dict.c(320): Allocating 4141 * 20 bytes (80 KiB) for word entries
+INFO: dict.c(333): Reading main dictionary: /home/pi/.config/rhasspy/profiles/en/dictionary.txt
+INFO: dict.c(213): Dictionary size 36, allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(336): 36 words read
+INFO: dict.c(358): Reading filler dictionary: /home/pi/.config/rhasspy/profiles/en/acoustic_model/noisedict
+INFO: dict.c(213): Dictionary size 45, allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(361): 9 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(406): Allocating 46^3 * 2 bytes (190 KiB) for word-initial triphones
+INFO: dict2pid.c(132): Allocated 25576 bytes (24 KiB) for word-final triphones
+INFO: dict2pid.c(196): Allocated 25576 bytes (24 KiB) for single-phone word triphones
+INFO: ngram_model_trie.c(354): Trying to read LM in trie binary format
+INFO: ngram_model_trie.c(365): Header doesn't match
+INFO: ngram_model_trie.c(177): Trying to read LM in arpa format
+INFO: ngram_model_trie.c(193): LM of order 3
+INFO: ngram_model_trie.c(195): #1-grams: 30
+INFO: ngram_model_trie.c(195): #2-grams: 67
+INFO: ngram_model_trie.c(195): #3-grams: 90
+INFO: lm_trie.c(474): Training quantizer
+INFO: lm_trie.c(482): Building LM trie
+INFO: ngram_search_fwdtree.c(74): Initializing search tree
+INFO: ngram_search_fwdtree.c(101): 32 unique initial diphones
+INFO: ngram_search_fwdtree.c(186): Creating search channels
+INFO: ngram_search_fwdtree.c(323): Max nonroot chan increased to 170
+INFO: ngram_search_fwdtree.c(333): Created 32 root, 42 non-root channels, 9 single-phone words
+INFO: ngram_search_fwdflat.c(157): fwdflat: min_ef_width = 4, max_sf_win = 25
+[DEBUG:2024-03-31 09:58:26,235] rhasspyasr_pocketsphinx.transcribe: Successfully loaded decoder in 42.919855621000124 second(s)
+INFO: cmn.c(133): CMN: 56.01  4.11  1.47  3.76  4.03 -9.82 -11.86 -3.72 -6.96 -3.44  0.26 -4.66 -0.92
+INFO: ngram_search_fwdtree.c(1550):      895 words recognized (6/fr)
+INFO: ngram_search_fwdtree.c(1552):    41347 senones evaluated (270/fr)
+INFO: ngram_search_fwdtree.c(1556):    21880 channels searched (143/fr), 4514 1st, 14849 last
+INFO: ngram_search_fwdtree.c(1559):     1510 words for which last channels evaluated (9/fr)
+INFO: ngram_search_fwdtree.c(1561):     1059 candidate words for entering last phone (6/fr)
+INFO: ngram_search_fwdtree.c(1564): fwdtree 6.24 CPU 4.080 xRT
+INFO: ngram_search_fwdtree.c(1567): fwdtree 9.50 wall 6.207 xRT
+INFO: ngram_search_fwdflat.c(302): Utterance vocabulary contains 15 words
+INFO: ngram_search_fwdflat.c(948):      776 words recognized (5/fr)
+INFO: ngram_search_fwdflat.c(950):    31916 senones evaluated (209/fr)
+INFO: ngram_search_fwdflat.c(952):    19995 channels searched (130/fr)
+INFO: ngram_search_fwdflat.c(954):     2124 words searched (13/fr)
+INFO: ngram_search_fwdflat.c(957):      767 word transitions (5/fr)
+INFO: ngram_search_fwdflat.c(960): fwdflat 3.23 CPU 2.112 xRT
+INFO: ngram_search_fwdflat.c(963): fwdflat 4.91 wall 3.209 xRT
+[DEBUG:2024-03-31 09:58:40,682] rhasspyasr_pocketsphinx.transcribe: Decoded audio in 14.41760702900001 second(s)
+INFO: ngram_search.c(1250): lattice start node <s>.0 end node </s>.113
+INFO: ngram_search.c(1276): Eliminated 2 nodes before end node
+INFO: ngram_search.c(1381): Lattice has 329 nodes, 462 links
+INFO: ps_lattice.c(1374): Bestpath score: -1941
+INFO: ps_lattice.c(1378): Normalizer P(O) = alpha(</s>:113:151) = -113589
+INFO: ps_lattice.c(1435): Joint P(O,S) = -147965 P(S|O) = -34376
+INFO: ngram_search.c(872): bestpath 0.01 CPU 0.007 xRT
+INFO: ngram_search.c(875): bestpath 0.03 wall 0.021 xRT
+INFO: ngram_search.c(1027): bestpath 0.00 CPU 0.000 xRT
+INFO: ngram_search.c(1030): bestpath 0.00 wall 0.000 xRT
+[DEBUG:2024-03-31 09:58:40,729] rhasspyasr_pocketsphinx_hermes: Transcription(text='what time is it', likelihood=0.032128926824337045, transcribe_seconds=14.41760702900001, wav_seconds=1.53, tokens=[TranscriptionToken(token='<s>', start_time=0.0, end_time=0.02, likelihood=1.000300079792757), TranscriptionToken(token='what', start_time=0.03, end_time=0.29, likelihood=0.9046459604073162), TranscriptionToken(token='<sil>', start_time=0.3, end_time=0.32, likelihood=0.39708414932284664), TranscriptionToken(token='time', start_time=0.33, end_time=0.68, likelihood=1.0002000431911853), TranscriptionToken(token='is', start_time=0.69, end_time=0.83, likelihood=1.000100016593933), TranscriptionToken(token='it', start_time=0.84, end_time=1.12, likelihood=0.9990003840231794), TranscriptionToken(token='</s>', start_time=1.13, end_time=1.51, likelihood=1.0)])
+[DEBUG:2024-03-31 09:58:40,951] rhasspyasr_pocketsphinx_hermes: -> AsrTextCaptured(text='what time is it', likelihood=0.032128926824337045, seconds=14.41760702900001, site_id='default', session_id='default-default-2777711f-f64d-4612-acaf-6a1e6396284f', wakeword_id=None, asr_tokens=[[AsrToken(value='<s>', confidence=1.000300079792757, range_start=0, range_end=4, time=AsrTokenTime(start=0.0, end=0.02)), AsrToken(value='what', confidence=0.9046459604073162, range_start=4, range_end=9, time=AsrTokenTime(start=0.03, end=0.29)), AsrToken(value='<sil>', confidence=0.39708414932284664, range_start=9, range_end=15, time=AsrTokenTime(start=0.3, end=0.32)), AsrToken(value='time', confidence=1.0002000431911853, range_start=15, range_end=20, time=AsrTokenTime(start=0.33, end=0.68)), AsrToken(value='is', confidence=1.000100016593933, range_start=20, range_end=23, time=AsrTokenTime(start=0.69, end=0.83)), AsrToken(value='it', confidence=0.9990003840231794, range_start=23, range_end=26, time=AsrTokenTime(start=0.84, end=1.12)), AsrToken(value='</s>', confidence=1.0, range_start=26, range_end=31, time=AsrTokenTime(start=1.13, end=1.51))]], lang=None)
+[DEBUG:2024-03-31 09:58:40,959] rhasspyasr_pocketsphinx_hermes: Publishing 1082 bytes(s) to hermes/asr/textCaptured
+[DEBUG:2024-03-31 09:58:41,012] rhasspyasr_pocketsphinx_hermes: -> AsrAudioCaptured(49004 byte(s)) to rhasspy/asr/default/default-default-2777711f-f64d-4612-acaf-6a1e6396284f/audioCaptured
+[DEBUG:2024-03-31 09:58:41,679] rhasspydialogue_hermes: <- AsrTextCaptured(text='what time is it', likelihood=0.032128926824337045, seconds=14.41760702900001, site_id='default', session_id='default-default-2777711f-f64d-4612-acaf-6a1e6396284f', wakeword_id=None, asr_tokens=[[AsrToken(value='<s>', confidence=1.000300079792757, range_start=0, range_end=4, time=AsrTokenTime(start=0.0, end=0.02)), AsrToken(value='what', confidence=0.9046459604073162, range_start=4, range_end=9, time=AsrTokenTime(start=0.03, end=0.29)), AsrToken(value='<sil>', confidence=0.39708414932284664, range_start=9, range_end=15, time=AsrTokenTime(start=0.3, end=0.32)), AsrToken(value='time', confidence=1.0002000431911853, range_start=15, range_end=20, time=AsrTokenTime(start=0.33, end=0.68)), AsrToken(value='is', confidence=1.000100016593933, range_start=20, range_end=23, time=AsrTokenTime(start=0.69, end=0.83)), AsrToken(value='it', confidence=0.9990003840231794, range_start=23, range_end=26, time=AsrTokenTime(start=0.84, end=1.12)), AsrToken(value='</s>', confidence=1.0, range_start=26, range_end=31, time=AsrTokenTime(start=1.13, end=1.51))]], lang=None)
+[WARNING:2024-03-31 09:58:41,757] rhasspydialogue_hermes: Ignoring unknown session default-default-2777711f-f64d-4612-acaf-6a1e6396284f
+[DEBUG:2024-03-31 09:58:43,183] rhasspyasr_pocketsphinx_hermes: Voice command recorded for session default-default-2777711f-f64d-4612-acaf-6a1e6396284f (35520 byte(s))
+[DEBUG:2024-03-31 09:58:43,222] rhasspyasr_pocketsphinx_hermes: -> AsrRecordingFinished(site_id='default', session_id='default-default-2777711f-f64d-4612-acaf-6a1e6396284f')
+[DEBUG:2024-03-31 09:58:43,231] rhasspyasr_pocketsphinx_hermes: Publishing 90 bytes(s) to rhasspy/asr/recordingFinished
+[DEBUG:2024-03-31 09:58:43,246] rhasspyasr_pocketsphinx_hermes: Transcribing 35564 byte(s) of audio data
+INFO: ngram_search_fwdflat.c(302): Utterance vocabulary contains 0 words
+[DEBUG:2024-03-31 09:58:43,306] rhasspyasr_pocketsphinx.transcribe: Decoded audio in 0.045884688999876744 second(s)
+ERROR: "ngram_search.c", line 1139: Couldn't find <s> in first frame
+[WARNING:2024-03-31 09:58:43,318] rhasspyasr_pocketsphinx_hermes: Received empty transcription
+[DEBUG:2024-03-31 09:58:43,365] rhasspyasr_pocketsphinx_hermes: -> AsrTextCaptured(text='', likelihood=0, seconds=0, site_id='default', session_id='default-default-2777711f-f64d-4612-acaf-6a1e6396284f', wakeword_id=None, asr_tokens=None, lang=None)
+[DEBUG:2024-03-31 09:58:43,372] rhasspyasr_pocketsphinx_hermes: Publishing 186 bytes(s) to hermes/asr/textCaptured
+[DEBUG:2024-03-31 09:58:43,412] rhasspyasr_pocketsphinx_hermes: -> AsrAudioCaptured(35564 byte(s)) to rhasspy/asr/default/default-default-2777711f-f64d-4612-acaf-6a1e6396284f/audioCaptured
+[DEBUG:2024-03-31 09:58:43,505] rhasspydialogue_hermes: <- AsrTextCaptured(text='', likelihood=0, seconds=0, site_id='default', session_id='default-default-2777711f-f64d-4612-acaf-6a1e6396284f', wakeword_id=None, asr_tokens=None, lang=None)
+[WARNING:2024-03-31 09:58:43,528] rhasspydialogue_hermes: Ignoring unknown session default-default-2777711f-f64d-4612-acaf-6a1e6396284f
+[DEBUG:2024-03-31 09:58:44,028] rhasspyasr_pocketsphinx_hermes: Voice command recorded for session default-default-2777711f-f64d-4612-acaf-6a1e6396284f (35520 byte(s))
+[DEBUG:2024-03-31 09:58:44,045] rhasspyasr_pocketsphinx_hermes: -> AsrRecordingFinished(site_id='default', session_id='default-default-2777711f-f64d-4612-acaf-6a1e6396284f')
+[DEBUG:2024-03-31 09:58:44,054] rhasspyasr_pocketsphinx_hermes: Publishing 90 bytes(s) to rhasspy/asr/recordingFinished
+[DEBUG:2024-03-31 09:58:44,072] rhasspyasr_pocketsphinx_hermes: Transcribing 35564 byte(s) of audio data
+INFO: ngram_search_fwdflat.c(302): Utterance vocabulary contains 0 words
+[DEBUG:2024-03-31 09:58:44,130] rhasspyasr_pocketsphinx.transcribe: Decoded audio in 0.05451263000009021 second(s)
+ERROR: "ngram_search.c", line 1139: Couldn't find <s> in first frame
+[WARNING:2024-03-31 09:58:44,163] rhasspyasr_pocketsphinx_hermes: Received empty transcription
+[DEBUG:2024-03-31 09:58:44,203] rhasspyasr_pocketsphinx_hermes: -> AsrTextCaptured(text='', likelihood=0, seconds=0, site_id='default', session_id='default-default-2777711f-f64d-4612-acaf-6a1e6396284f', wakeword_id=None, asr_tokens=None, lang=None)
+[DEBUG:2024-03-31 09:58:44,210] rhasspyasr_pocketsphinx_hermes: Publishing 186 bytes(s) to hermes/asr/textCaptured
+[DEBUG:2024-03-31 09:58:44,261] rhasspyasr_pocketsphinx_hermes: -> AsrAudioCaptured(35564 byte(s)) to rhasspy/asr/default/default-default-2777711f-f64d-4612-acaf-6a1e6396284f/audioCaptured
+[DEBUG:2024-03-31 09:58:44,347] rhasspydialogue_hermes: <- AsrTextCaptured(text='', likelihood=0, seconds=0, site_id='default', session_id='default-default-2777711f-f64d-4612-acaf-6a1e6396284f', wakeword_id=None, asr_tokens=None, lang=None)
+[WARNING:2024-03-31 09:58:44,372] rhasspydialogue_hermes: Ignoring unknown session default-default-2777711f-f64d-4612-acaf-6a1e6396284f
+[DEBUG:2024-03-31 09:58:45,145] rhasspyasr_pocketsphinx_hermes: Voice command recorded for session default-default-2777711f-f64d-4612-acaf-6a1e6396284f (75840 byte(s))
+[DEBUG:2024-03-31 09:58:45,164] rhasspyasr_pocketsphinx_hermes: -> AsrRecordingFinished(site_id='default', session_id='default-default-2777711f-f64d-4612-acaf-6a1e6396284f')
+[DEBUG:2024-03-31 09:58:45,171] rhasspyasr_pocketsphinx_hermes: Publishing 90 bytes(s) to rhasspy/asr/recordingFinished
+[DEBUG:2024-03-31 09:58:45,185] rhasspyasr_pocketsphinx_hermes: Transcribing 75884 byte(s) of audio data
+INFO: ngram_search_fwdflat.c(302): Utterance vocabulary contains 0 words
+[DEBUG:2024-03-31 09:58:45,314] rhasspyasr_pocketsphinx.transcribe: Decoded audio in 0.11688120700000582 second(s)
+ERROR: "ngram_search.c", line 1139: Couldn't find <s> in first frame
+[WARNING:2024-03-31 09:58:45,325] rhasspyasr_pocketsphinx_hermes: Received empty transcription
+[DEBUG:2024-03-31 09:58:45,345] rhasspyasr_pocketsphinx_hermes: -> AsrTextCaptured(text='', likelihood=0, seconds=0, site_id='default', session_id='default-default-2777711f-f64d-4612-acaf-6a1e6396284f', wakeword_id=None, asr_tokens=None, lang=None)
+[DEBUG:2024-03-31 09:58:45,375] rhasspyasr_pocketsphinx_hermes: Publishing 186 bytes(s) to hermes/asr/textCaptured
+[DEBUG:2024-03-31 09:58:45,423] rhasspyasr_pocketsphinx_hermes: -> AsrAudioCaptured(75884 byte(s)) to rhasspy/asr/default/default-default-2777711f-f64d-4612-acaf-6a1e6396284f/audioCaptured
+[DEBUG:2024-03-31 09:58:45,470] rhasspydialogue_hermes: <- AsrTextCaptured(text='', likelihood=0, seconds=0, site_id='default', session_id='default-default-2777711f-f64d-4612-acaf-6a1e6396284f', wakeword_id=None, asr_tokens=None, lang=None)
+[WARNING:2024-03-31 09:58:45,550] rhasspydialogue_hermes: Ignoring unknown session default-default-2777711f-f64d-4612-acaf-6a1e6396284f
+[DEBUG:2024-03-31 09:58:46,549] rhasspyasr_pocketsphinx_hermes: <- AsrStopListening(site_id='default', session_id='default-default-2777711f-f64d-4612-acaf-6a1e6396284f')
+[DEBUG:2024-03-31 09:58:46,558] rhasspyasr_pocketsphinx_hermes: Received a total of 987424 byte(s) for WAV data for session default-default-2777711f-f64d-4612-acaf-6a1e6396284f
+[DEBUG:2024-03-31 09:58:46,574] rhasspyasr_pocketsphinx_hermes: Stopping listening (session_id=default-default-2777711f-f64d-4612-acaf-6a1e6396284f)
