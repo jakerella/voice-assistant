@@ -1,0 +1,39 @@
+{
+    "dialogue": {
+        "system": "rhasspy"
+    },
+    "intent": {
+        "system": "fsticuffs"
+    },
+    "microphone": {
+        "arecord": {
+            "device": "default"
+        },
+        "system": "arecord"
+    },
+    "sounds": {
+        "aplay": {
+            "volume": "0.7"
+        },
+        "system": "aplay"
+    },
+    "speech_to_text": {
+        "system": "pocketsphinx"
+    },
+    "text_to_speech": {
+        "system": "espeak"
+    },
+    "wake": {
+        "pocketsphinx": {
+            "threshold": 9.999999999999999e-33
+        },
+        "raven": {
+            "keywords": {
+                "pasta": {
+                    "enabled": true
+                }
+            }
+        },
+        "system": "raven"
+    }
+}
